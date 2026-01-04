@@ -2,9 +2,9 @@ import logo from '../../../assets/logo.png';
 
 const FastPercelLogo = () => {
     return (
-        <div>
-            <img src={logo} alt="FastPercel Logo" />
-            <p>FastPercel</p>
+        <div className='flex items-end'>
+            <img className='mb-2' src={logo} alt="FastPercel Logo" />
+            <p className="-ml-3 text-2xl font-bold">FastPercel</p>
         </div>
     );
 };
