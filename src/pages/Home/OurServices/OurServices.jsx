@@ -42,11 +42,11 @@ const Services = () => {
         className="rounded-4xl p-8 md:p-16 "
       >
         {/* Header: Grid centered */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center border-b border-white/10 pb-10 mb-12">
-          <h2 className="text-3xl md:text-5xl font-bold uppercase">
+        <div className="grid grid-cols-1 text-center gap-6 items-center border-b border-white/10 pb-10 mb-12 text-white">
+          <h2 className="text-3xl font-bold uppercase">
             Our Services
           </h2>
-          <p className="text-lg opacity-90 leading-relaxed">
+          <p className=" opacity-90 leading-relaxed">
             FastParcel provides reliable, secure, and lightning-fast logistics
             solutions designed to connect you to the world with ease.
           </p>
