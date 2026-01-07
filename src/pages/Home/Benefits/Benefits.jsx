@@ -42,6 +42,12 @@ const Benefits = () => {
       <div className="flex flex-col gap-8">
         {benefitData.map((item, index) => (
           <div
+            data-aos="fade-down"
+            data-aos-offset="400"
+            data-aos-delay="150"
+            data-aos-duration="1500"
+            data-aos-easing="ease-in-out"
+            data-aos-once="false"
             key={index}
             className="group w-full bg-white border border-gray-100 rounded-3xl flex flex-col md:flex-row items-center overflow-hidden hover:shadow-xl hover:shadow-[#03373d]/5 transition-all duration-500"
           >

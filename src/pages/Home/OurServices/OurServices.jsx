@@ -65,6 +65,12 @@ const Services = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
             <div
+              data-aos="fade-up"
+              data-aos-offset="400"
+              data-aos-delay="200"
+              data-aos-duration="1500"
+              data-aos-easing="ease-in-out"
+              data-aos-once="false"
               key={index}
               className="group p-10 rounded-xl border border-white/10 transition-all duration-500 cursor-pointer bg-white hover:bg-[#caeb66]"
             >
