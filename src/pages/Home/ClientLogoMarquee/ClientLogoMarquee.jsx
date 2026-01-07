@@ -1,5 +1,5 @@
-import React from "react";
 import Marquee from "react-fast-marquee";
+
 import amazonLogo from "../../../assets/brands/amazon.png";
 import amazonVectorLogo from "../../../assets/brands/amazon_vector.png";
 import casioLogo from "../../../assets/brands/casio.png";
@@ -20,45 +20,36 @@ const ClientLogoMarquee = () => {
   ];
 
   return (
-    <div className="w-full bg-[#f8fcfc] py-14 overflow-hidden border-y border-gray-100">
-      <div className="max-w-7xl mx-auto px-4">
-        {/* Modern Section Header */}
-        <div className="flex items-center gap-4 mb-10">
-          <div className="h-[1px] flex-1 bg-gradient-to-r from-transparent to-gray-200"></div>
-          <span className="text-[11px] font-bold uppercase tracking-[0.4em] text-[#03373d] opacity-50 whitespace-nowrap">
-            Our Global Partners
+    <section className="w-full bg-[#fcfdfe] py-10 overflow-hidden border-y border-gray-50">
+      <div className="max-w-7xl mx-auto">
+        {/* Minimalist Header */}
+        <div className="flex justify-center mb-8">
+          <span className="text-[10px] font-bold uppercase tracking-[0.5em] text-[#03373d] opacity-30">
+            Trusted Partners
           </span>
-          <div className="h-[1px] flex-1 bg-gradient-to-l from-transparent to-gray-200"></div>
         </div>
 
         <Marquee
-          speed={50}
+          speed={35}
           gradient={true}
-          gradientColor={[248, 252, 252]}
-          gradientWidth={100}
-          pauseOnHover={true}
+          gradientColor={[252, 253, 254]}
+          gradientWidth={80}
         >
           {brands.map((brand) => (
             <div
               key={brand.id}
-              className="mx-10 md:mx-14 flex items-center justify-center group"
+              className="mx-10 md:mx-14 flex items-center justify-center"
             >
-              {/* Image Container with fixed height to control "too big" logos */}
-              <div className="relative h-12 flex items-center justify-center">
-                <img
-                  src={brand.img}
-                  alt={`Brand ${brand.id}`}
-                  className="h-full w-auto max-w-[140px] object-contain opacity-50 grayscale group-hover:grayscale-0 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500 ease-in-out"
-                />
-
-                {/* Subtle Brand Color Glow */}
-                <div className="absolute inset-0 bg-[#caeb66]/0 group-hover:bg-[#caeb66]/5 rounded-full blur-2xl transition-all duration-500 -z-10"></div>
-              </div>
+              <img
+                src={brand.img}
+                alt="Brand Logo"
+                className="h-7 md:h-8 w-auto max-w-25 object-contain opacity-40 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-500"
+              />
             </div>
           ))}
         </Marquee>
       </div>
-    </div>
+    </section>
   );
 };
 
