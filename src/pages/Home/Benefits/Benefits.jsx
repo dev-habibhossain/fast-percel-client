@@ -3,7 +3,7 @@ import { LocateFixed, ShieldCheck, PhoneCall } from "lucide-react";
 
 // Use your actual asset paths here
 import trackingImg from "../../../assets/benefits/post-service-tracking-abstract-c.png";
-import safetyImg from "../../../assets/benefits/warehouse-logistic-delivery-serv.png";
+import safetyImg from "../../../assets/benefits/new-entries-concept-illustration.png";
 import supportImg from "../../../assets/benefits/technical-support-concept-idea-c.png";
 
 const Benefits = () => {
